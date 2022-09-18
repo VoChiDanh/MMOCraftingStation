@@ -1,0 +1,12 @@
+stations:
+  test:
+    type: default #open without permission needed
+    command: /stations1
+    station: test
+  test2:
+    type: permission #need permission to open it
+    permission: stations.test
+    command: /stations2
+    station: test2
+message:
+  permission: "&cYou need permission #p# to open it"

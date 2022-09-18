@@ -1,0 +1,9 @@
+name: MMOCraftingStation
+version: '${project.version}'
+main: net.danh.mmocraftingstation.MMOCraftingStation
+api-version: 1.13
+depend: [ MMOItems ]
+authors: [ VoChiDanh ]
+commands:
+  mmocraftingstation:
+    description: Reload command
