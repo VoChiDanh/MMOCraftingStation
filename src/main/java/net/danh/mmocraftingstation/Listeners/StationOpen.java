@@ -22,7 +22,7 @@ public class StationOpen implements Listener {
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onStationOpen(PlayerCommandPreprocessEvent e) {
         Player p = e.getPlayer();
-        String m = e.getMessage();
+        String m = e.getMessage().toLowerCase();
         Objects.requireNonNull(configManager.getConfig().getConfig().getConfigurationSection("stations")).getKeys(false).forEach(s -> {
             String cmd = configManager.getConfig().getConfig().getString("stations." + s + ".command");
             String crafting = configManager.getConfig().getConfig().getString("stations." + s + ".station");
